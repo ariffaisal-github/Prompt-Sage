@@ -10,9 +10,8 @@ export default defineConfig({
       "/api": {
         target: "https://prompt-sage-backend.onrender.com",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, "")  // Optionally remove '/api' from the path if needed
+        secure: true,
       }
     }
-    
-  }
+  }  
 })
